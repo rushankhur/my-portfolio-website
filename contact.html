@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./node_modules/bulma-helpers/css/bulma-helpers.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/message.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Rushan K. | Full Stack Engineer</title>
+</head>
+
+<body>
+
+    <section class="hero is-fullheight-with-navbar">
+
+        <div class="hero-head has-text-primary">
+            <nav class="navbar is-white">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="index.html">
+                            <img src="./images/logo.png" alt="Logo">
+                        </a>
+                        <div class="navbar-burger burger" data-target="navMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div id="navMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="index.html">Home</a>
+                            <a class="navbar-item" href="about.html">About</a>
+                            <a class="navbar-item"
+                                href="https://drive.google.com/open?id=1uW-wCB2T9n2J_-gr2lXVIHQAPGIw1rdk">Resume</a>
+                            <a class="navbar-item" href="portfolio.html">Portfolio</a>
+                            <a class="navbar-item" href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- Begin Contact Section -->
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-multiline">
+
+                    <!-- Left side -->
+                    <div class="container column is-6 has-margin-bottom-30">
+
+                        <div class="columns is-centered">
+                            <div class="column is-four-fifths">
+                                <div class="field">
+                                    <h1 class="title is-size-2 has-margin-bottom-40 has-margin-top-50">Get in Touch</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns is-centered has-margin-bottom-30">
+                            <div class="column is-four-fifths">
+                                <div class="field">
+                                    <p class="is-size-6">Thank you for your interest. If you wish to get in touch, feel
+                                        free to call,
+                                        send me an email or simply send a message.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-icons">
+                                <div class="columns is-centered">
+                                    <div class="column is-four-fifths">
+                                        <a href="#" class="is-size-5">
+                                            <span class="fa-stack icon-vertical-align">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <span class="has-padding-left-5 icon-font-size">902 412 1560</span>
+                                        </a>
+                                    </div>
+                            </div>
+
+                                <div class="columns is-centered">
+                                    <div class="column is-four-fifths">
+                                        <a href="#" class="is-size-5">
+                                            <span class="fa-stack icon-vertical-align">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <span class="has-padding-left-5 icon-font-size">kazanface@gmail.com</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="columns is-centered">
+                                    <div class="column is-four-fifths">
+                                        <a href="https://www.linkedin.com/in/rushan-k/" class="is-size-5">
+                                            <span class="fa-stack icon-vertical-align">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <span class="has-padding-left-5 icon-font-size">/rushan-k</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="columns is-centered">
+                                    <div class="column is-four-fifths">
+                                        <a href="https://www.facebook.com/hrushan" class="is-size-5">
+                                            <span class="fa-stack icon-vertical-align">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                            <span class="has-padding-left-5 icon-font-size">/hrushan</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="container column is-6">
+
+                        <div class="columns is-centered">
+                            <div class="column is-four-fifths">
+                                <div class="field">
+                                    <h1 class="title is-size-2 has-margin-bottom-30 has-margin-top-50">Send a message</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- A message for a user -->
+                        <div class="columns is-centered">
+                            <div class="column is-four-fifths">
+                                <div id="form-messages"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact form -->
+                        <form id="ajax-contact" method="post" action="mailer.php">
+                            <div class="columns is-centered">
+                                <div class="column is-four-fifths">
+                                    <div class="field has-margin-bottom-10">
+                                        <label for="name" class="label">Name*</label>
+                                        <div class="control">
+                                            <input class="input" type="text" id="name" name="name" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columns is-centered">
+                                <div class="column is-four-fifths">
+                                    <div class="field has-margin-bottom-10">
+                                        <label for="email" class="label">Email*</label>
+                                        <div class="control">
+                                            <input class="input" type="email" id="email" name="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columns is-centered">
+                                <div class="column is-four-fifths">
+                                    <div class="field has-margin-bottom-10">
+                                        <label for="message" class="label">Message*</label>
+                                        <div class="control">
+                                            <textarea class="textarea" id="message" name="message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columns is-centered">
+                                <div class="column is-four-fifths">
+                                    <div class="field">
+                                        <div class="control">
+                                            <button type="submit" class="button is-primary is-rounded" id="form-submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer has-background-white has-text-centered">
+        <div class="container">
+            <div class="social-icons">
+                <p class="field">
+                    <a href="https://github.com/rushankhur" class="social-link"><i class="fab fa-github fa-2x"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/hrushan" class="social-link"><i class="fab fa-facebook fa-2x"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/rushan-k/" class="social-link"><i class="fab fa-linkedin fa-2x"
+                            aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>Rushan Khuramshin &copy; 2019</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

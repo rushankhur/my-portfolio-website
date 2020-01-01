@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./node_modules/bulma-helpers/css/bulma-helpers.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Rushan K. | Full Stack Engineer</title>
+  </head>
+
+  <body>
+
+    <section class="hero is-fullheight-with-navbar">
+
+        <div class="hero-head has-text-primary">
+            <nav class="navbar is-white">
+                <div class="container">
+                    <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <img src="./images/logo.png" alt="Logo">
+                    </a>
+                    <div class="navbar-burger burger" data-target="navMenu">  
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+
+                    <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">        
+                        <a class="navbar-item" href="index.html">Home</a>
+                        <a class="navbar-item" href="about.html">About</a>
+                        <a class="navbar-item" href="https://drive.google.com/open?id=1uW-wCB2T9n2J_-gr2lXVIHQAPGIw1rdk">Resume</a>
+                        <a class="navbar-item" href="portfolio.html">Portfolio</a>
+                        <a class="navbar-item" href="contact.html">Contact</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    
+
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered has-margin-bottom-20">
+                    <div class="column has-text-centered is-three-fifths">
+                        <h1 class="title  section-title is-size-2 has-margin-bottom-50 has-margin-top-30">My Portfolio</h1>
+                        <h2 class="subtitle is-size-5 has-margin-bottom-10">
+                            During my studying at the college I have worked on several projects. Here are some deployed
+                            and working applications:
+                        </h2>
+                    </div>
+                </div>
+                
+
+                <div class="columns is-multiline">
+                    <!-- Recipes card -->
+                    <div class="column is-one-third skew">
+                        <div class="box">
+                            <span class="original">
+                                <figure class="image image is-3by2">
+                                    <img src="./images/recipes.jpg" alt="Recipes App">
+                                </figure>
+                                <div class="is-overlay is-vertical-center w700">
+                                    <h1 class="title has-text-black">Recipes App</h1>
+                                    </div>
+                            </span>
+                            <div class="overlay is-vertical-center">
+                                <div>
+                                    <h2 class="is-size-5 has-text-weight-bold has-margin-bottom-20">Full Stack App</h2>
+                                    <p class="is-size-6">The web app built using MongoDB, Express.js, React and Node.js</p>
+                                    <a class="button is-primary is-rounded has-margin-top-20" id="btnRecipes">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipes modal -->
+                    <div class="modal" id="modalRecipes">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                            <p class="modal-card-title">Recipes App</p>
+                            <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                <b>Project Summary</b>
+                                <p>This project is a full stack CRUD application where a user can create, read, update and delete recipes.
+                                The app deployed on Heroku platform.</p><br/>
+                                <b>Technologies</b>
+                                <p>MERN Stack, MongoDB, Mongoose, Express, React, Node.js, Javascript(ES6), API, JWT, Heroku, Bootstrap, Joi.</p><br/>
+                                <b>Important</b>
+                                <p>Please click on the round information button with letter 'i' within app to know what you can do
+                                with it. Also, it can take 5-10 seconds to load this application whithin your browser.</p>
+                            </section>
+                            <footer class="modal-card-foot">
+                            <a class="button is-primary is-small" href="http://w0418890fullstack.herokuapp.com/">
+                                <span>View Project</span><span class="icon is-small"><i class="fas fa-angle-double-right"></i></span>
+                            </a>
+                            <a class="button is-primary is-small" href="https://github.com/rushankhur">
+                                <span>View Code</span><span class="icon is-small"><i class="fab fa-github"></i></span>
+                            </a>
+                            <button class="button is-small" data-bulma-modal="close">Cancel</button>
+                            </footer>
+                        </div>
+                    </div>
+                            
+                    <!-- Birdfeed card -->
+                    <div class="column is-one-third skew">
+                        <div class="box">
+                            <span class="original">
+                                <figure class="image image is-3by2">
+                                    <img src="./images/birdfeed.jpg" alt="Birdfeed App">
+                                </figure>
+                                <div class="is-overlay is-vertical-center w700">
+                                    <h1 class="title has-text-black">Birdfeed App</h1>
+                                </div>
+                            </span>
+                            <div class="overlay is-vertical-center">
+                                <div>
+                                    <h2 class="is-size-5 has-text-weight-bold has-margin-bottom-20">Laravel App</h2>
+                                    <p class="is-size-6">The web app built using Laravel and Bootstrap frameworks.</p>
+                                    <a class="button is-primary is-rounded has-margin-top-20" id="btnBirdfeed">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Birdfeed modal -->
+                    <div class="modal" id="modalBirdfeed">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                            <p class="modal-card-title">Birdfeed App</p>
+                            <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                <b>Project Summary</b>
+                                <p>This is the web application built using Laravel, one of the most popular PHP Framework. 
+                                It serves as a custom Media Feed site about birds. The website consist of two areas: the administrative
+                                back-end area and front-end site area.</p><br/>
+                                <b>Technologies</b>
+                                <p>Laravel PHP framework, MVC, MySQL, Javascript, HTML5, Bootstrap.</p><br/>
+                                <b>Important</b>
+                                <p>Please click on the round information button with letter 'i' within app to know what you can do
+                                with it.</p>
+                            </section>
+                            <footer class="modal-card-foot">
+                            <a class="button is-primary is-small" href="http://birdfeed.rushandev.ca/feed">
+                                <span>View Project</span><span class="icon is-small"><i class="fas fa-angle-double-right"></i></span>
+                            </a>
+                            <a class="button is-primary is-small" href="https://github.com/rushankhur">
+                                <span>View Code</span><span class="icon is-small"><i class="fab fa-github"></i></span>
+                            </a>
+                            <button class="button is-small" data-bulma-modal="close">Cancel</button>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- Employees card -->
+                    <div class="column is-one-third skew">
+                        <div class="box">
+                            <span class="original">
+                                <figure class="image image is-3by2">
+                                    <img src="./images/employees.jpg" alt="Birdfeed App">
+                                </figure>
+                                <div class="is-overlay is-vertical-center w700">
+                                    <h1 class="title has-text-black">Employees App</h1>
+                                    </div>
+                            </span>
+                            <div class="overlay is-vertical-center">
+                                <div>
+                                    <h2 class="is-size-5 has-text-weight-bold has-margin-bottom-20">PHP App</h2>
+                                    <p class="is-size-6">The web app built using PHP (PDO) language, MySQL and Bootstrap framework.</p>
+                                    <a class="button is-primary is-rounded has-margin-top-20" id="btnEmployees">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employees modal -->
+                    <div class="modal" id="modalEmployees">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                            <p class="modal-card-title">Employees App</p>
+                            <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                <b>Project Summary</b>
+                                <p>This is the CRUD web application built with PHP Data Object (PDO) where a user can create,
+                                read, update, delete, search employees and see a report. PDO provides better secured way to
+                                access databases and a better solution to prevent SQL injection.</p><br/>
+                                <b>Technologies</b>
+                                <p>PHP (PDO), MySQL, Javascript, HTML5, CSS3, Bootstrap.</p><br/>
+                                <b>Important</b>
+                                <p>Please click on the round information button with letter 'i' within app to know what you can do
+                                with it.</p>
+                            </section>
+                            <footer class="modal-card-foot">
+                            <a class="button is-primary is-small" href="http://employees.rushandev.ca/">
+                                <span>View Project</span><span class="icon is-small"><i class="fas fa-angle-double-right"></i></span>
+                            </a>
+                            <a class="button is-primary is-small" href="https://github.com/rushankhur">
+                                <span>View Code</span><span class="icon is-small"><i class="fab fa-github"></i></span>
+                            </a>
+                            <button class="button is-small" data-bulma-modal="close">Cancel</button>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- Job Fair website card -->
+                    <div class="column is-one-third skew">
+                        <div class="box">
+                            <span class="original">
+                                <figure class="image image is-3by2">
+                                    <img src="./images/jobfair.jpg" alt="Job Fair website">
+                                </figure>
+                                <div class="is-overlay is-vertical-center w700">
+                                    <h1 class="title has-text-black">IT Job Fair website</h1>
+                                    </div>
+                            </span>
+                            <div class="overlay is-vertical-center">
+                                <div>
+                                    <h2 class="is-size-5 has-text-weight-bold has-margin-bottom-20">IT Job Fair</h2>
+                                    <p class="is-size-6">The web site built using HTML5, CSS3 and Bootstrap framework.</p>
+                                    <a class="button is-primary is-rounded has-margin-top-20" id="btnJobfair">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Fair website modal -->
+                    <div class="modal" id="modalJobfair">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                            <p class="modal-card-title">IT Job Fair website</p>
+                            <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                <b>Project Summary</b>
+                                <p>This is a front-end part of the IT Job Fair website which I built during my workterm at
+                                the college.</p><br/>
+                                <b>Technologies</b>
+                                <p>HTML5, CSS3, Javascript, Bootstrap.</p>
+                            </section>
+                            <footer class="modal-card-foot">
+                            <a class="button is-primary is-small" href="http://jobfair.rushandev.ca/">
+                                <span>View Project</span><span class="icon is-small"><i class="fas fa-angle-double-right"></i></span>
+                            </a>
+                            <a class="button is-primary is-small" href="https://github.com/rushankhur">
+                                <span>View Code</span><span class="icon is-small"><i class="fab fa-github"></i></span>
+                            </a>
+                            <button class="button is-small" data-bulma-modal="close">Cancel</button>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- My portfolio website card -->
+                    <div class="column is-one-third skew">
+                        <div class="box">
+                            <span class="original">
+                                <figure class="image image is-3by2">
+                                    <img src="./images/my_website.png" alt="My portfolio website">
+                                </figure>
+                                <div class="is-overlay is-vertical-center w700">
+                                    <h1 class="title has-text-black">My portfolio website</h1>
+                                    </div>
+                            </span>
+                            <div class="overlay is-vertical-center">
+                                <div>
+                                    <h2 class="is-size-5 has-text-weight-bold has-margin-bottom-20">My portfolio website</h2>
+                                    <p class="is-size-6">The web site built using HTML5, CSS3 and Bulma CSS framework.</p>
+                                    <a class="button is-primary is-rounded has-margin-top-20" id="btnMywebsite">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- My portfolio website modal -->
+                    <div class="modal" id="modalMywebsite">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                            <p class="modal-card-title">My portfolio website</p>
+                            <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                <b>Project Summary</b>
+                                <p>This website is a platform for my projects and information about me. Furthermore,
+                                 it is a way to express my personality, experience, and capabilities. </p><br/>
+                                <b>Technologies</b>
+                                <p>HTML5, CSS3, Javascript, Bulma CSS.</p>
+                            </section>
+                            <footer class="modal-card-foot">
+                            <a class="button is-primary is-small" href="http://rushandev.ca/">
+                                <span>View Project</span><span class="icon is-small"><i class="fas fa-angle-double-right"></i></span>
+                            </a>
+                            <a class="button is-primary is-small" href="https://github.com/rushankhur">
+                                <span>View Code</span><span class="icon is-small"><i class="fab fa-github"></i></span>
+                            </a>
+                            <button class="button is-small" data-bulma-modal="close">Cancel</button>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- <div class="content">
+                        <h4>Sales Control App</h4> 
+                        <p>The desktop app built using Electron framework and Photon UI kit.</p></br>
+                        <a class="button is-primary is-rounded" href="./portfolio/salescontrolapp.html">Read more</a>
+                    </div> -->
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-white has-text-centered">
+        <div class="container">
+            <div class="social-icons">
+                <p class="field">
+                    <a href="https://github.com/rushankhur" class="social-link"><i class="fab fa-github fa-2x"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/hrushan" class="social-link"><i class="fab fa-facebook fa-2x"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/rushan-k/" class="social-link"><i class="fab fa-linkedin fa-2x"
+                            aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>Rushan Khuramshin &copy; 2019</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="./scripts/main.js"></script>
+<script src="./scripts/modals.js"></script>
+</body>
+</html>

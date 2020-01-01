@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap');
+
+/* General styles */
+body, button, input, select, textarea {
+  font-family: Work Sans,Regular;
+}
+
+.has-item-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.is-primary {
+  background-color: #7510F7;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+.button.is-primary:hover {
+  background-color: #A993BF;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+ 
+.occupation-box {
+  border: 2px solid #7510F7;
+  width: 260px;
+  height: 50px;
+  font-size: 24px;
+  padding: 4px 10px 4px 10px;
+}
+
+/* Skills section on the home page */
+.skills-box {
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+  color: #141c3a;
+  display: block;
+}
+
+section .skills-box .content .columns .column ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+section .skills-box .content .columns .column:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+
+.has-title-purple {
+  color: #7510F7 !important;
+}
+
+/* About page image resizing */
+.is-resized {
+  width: 300px;
+  height: auto;
+}
+
+/* Portfolio page */
+/* Card effects */
+.box {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
+}
+
+.overlay{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skew .overlay{
+  background-color: #3c444b;
+  color: #fff;
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: skewX(-10deg);
+  -webkit-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.skew .box:hover .overlay{
+  transform: skewX(0deg);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-card {
+    width: 90%;
+  }
+}
+
+.has-text-centered {
+  text-align: center!important;
+}
+
+/* Contact page */
+.icon-vertical-align {
+  vertical-align: middle;
+}
+
+.icon-font-size {
+  font-size: 18px;
+}
+
+/* Footer */
+.social-icons a {
+  color: #7510F7!important;
+}
+.social-icons a:hover{
+  color:#A993BF!important;}
+.social-link {
+  padding: 3px;
+}
+
+/* Solving problem with mobile version */
+.columns {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .columns {
+      margin-left: -2rem;
+      margin-right: -2rem;
+      margin-top: -2rem;
+  }
+}
+
+
