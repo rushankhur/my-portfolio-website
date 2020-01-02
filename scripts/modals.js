@@ -50,10 +50,10 @@ btnRecipes.addEventListener("click", function () {
 	mdlRecipes.show()
 })
 mdlRecipes.addEventListener('modal:show', function() {
-	console.log("opened")
+	// console.log("opened")
 })
 mdlRecipes.addEventListener("modal:close", function() {
-	console.log("closed")
+	// console.log("closed")
 })
 
 // Birdfeed modal
@@ -63,10 +63,10 @@ btnBirdfeed.addEventListener("click", function () {
 	modalBirdfeed.show()
 })
 modalBirdfeed.addEventListener('modal:show', function() {
-	console.log("opened")
+	// console.log("opened")
 })
 modalBirdfeed.addEventListener("modal:close", function() {
-	console.log("closed")
+	// console.log("closed")
 })
 
 // Employees modal
@@ -76,10 +76,10 @@ btnEmployees.addEventListener("click", function () {
 	modalEmployees.show()
 })
 modalEmployees.addEventListener('modal:show', function() {
-	console.log("opened")
+	// console.log("opened")
 })
 modalEmployees.addEventListener("modal:close", function() {
-	console.log("closed")
+	// console.log("closed")
 })
 
 // Job Fair website modal
@@ -89,10 +89,10 @@ btnJobfair.addEventListener("click", function () {
 	modalJobfair.show()
 })
 modalJobfair.addEventListener('modal:show', function() {
-	console.log("opened")
+	// console.log("opened")
 })
 modalJobfair.addEventListener("modal:close", function() {
-	console.log("closed")
+	// console.log("closed")
 })
 
 // My portfolio website modal
@@ -102,8 +102,8 @@ btnMywebsite.addEventListener("click", function () {
 	modalMywebsite.show()
 })
 modalMywebsite.addEventListener('modal:show', function() {
-	console.log("opened")
+	// console.log("opened")
 })
 modalMywebsite.addEventListener("modal:close", function() {
-	console.log("closed")
+	// console.log("closed")
 })
