@@ -49,12 +49,8 @@ const mdlRecipes = new BulmaModal("#modalRecipes")
 btnRecipes.addEventListener("click", function () {
 	mdlRecipes.show()
 })
-mdlRecipes.addEventListener('modal:show', function() {
-	// console.log("opened")
-})
-mdlRecipes.addEventListener("modal:close", function() {
-	// console.log("closed")
-})
+mdlRecipes.addEventListener('modal:show', function() {})
+mdlRecipes.addEventListener("modal:close", function() {})
 
 // Birdfeed modal
 const btnBirdfeed = document.querySelector("#btnBirdfeed")
@@ -62,12 +58,17 @@ const modalBirdfeed = new BulmaModal("#modalBirdfeed")
 btnBirdfeed.addEventListener("click", function () {
 	modalBirdfeed.show()
 })
-modalBirdfeed.addEventListener('modal:show', function() {
-	// console.log("opened")
+modalBirdfeed.addEventListener('modal:show', function() {})
+modalBirdfeed.addEventListener("modal:close", function() {})
+
+// Drum Machine modal
+const btnDrumMachine = document.querySelector("#btnDrumMachine")
+const modalDrumMachine = new BulmaModal("#modalDrumMachine")
+btnDrumMachine.addEventListener("click", function () {
+	modalDrumMachine.show()
 })
-modalBirdfeed.addEventListener("modal:close", function() {
-	// console.log("closed")
-})
+modalDrumMachine.addEventListener('modal:show', function() {})
+modalDrumMachine.addEventListener("modal:close", function() {})
 
 // Employees modal
 const btnEmployees = document.querySelector("#btnEmployees")
@@ -75,12 +76,8 @@ const modalEmployees = new BulmaModal("#modalEmployees")
 btnEmployees.addEventListener("click", function () {
 	modalEmployees.show()
 })
-modalEmployees.addEventListener('modal:show', function() {
-	// console.log("opened")
-})
-modalEmployees.addEventListener("modal:close", function() {
-	// console.log("closed")
-})
+modalEmployees.addEventListener('modal:show', function() {})
+modalEmployees.addEventListener("modal:close", function() {})
 
 // Job Fair website modal
 const btnJobfair = document.querySelector("#btnJobfair")
@@ -88,12 +85,8 @@ const modalJobfair = new BulmaModal("#modalJobfair")
 btnJobfair.addEventListener("click", function () {
 	modalJobfair.show()
 })
-modalJobfair.addEventListener('modal:show', function() {
-	// console.log("opened")
-})
-modalJobfair.addEventListener("modal:close", function() {
-	// console.log("closed")
-})
+modalJobfair.addEventListener('modal:show', function() {})
+modalJobfair.addEventListener("modal:close", function() {})
 
 // My portfolio website modal
 const btnMywebsite = document.querySelector("#btnMywebsite")
@@ -101,9 +94,16 @@ const modalMywebsite = new BulmaModal("#modalMywebsite")
 btnMywebsite.addEventListener("click", function () {
 	modalMywebsite.show()
 })
-modalMywebsite.addEventListener('modal:show', function() {
-	// console.log("opened")
+modalMywebsite.addEventListener('modal:show', function() {})
+modalMywebsite.addEventListener("modal:close", function() {})
+
+// Sales Control modal
+const btnSalesControl = document.querySelector("#btnSalesControl")
+const modalSalesControl = new BulmaModal("#modalSalesControl")
+btnSalesControl.addEventListener("click", function () {
+	modalSalesControl.show()
 })
-modalMywebsite.addEventListener("modal:close", function() {
-	// console.log("closed")
-})
+modalSalesControl.addEventListener('modal:show', function() {})
+modalSalesControl.addEventListener("modal:close", function() {})
+
+
