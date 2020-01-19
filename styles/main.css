@@ -11,15 +11,23 @@ body, button, input, select, textarea {
 }
 
 .button.is-primary {
+  color: #fff;
   background-color: #7510F7;
-  border-color: transparent;
-  color: #FFFFFF;
+  border: 2px solid #7510F7;
+  background-image: -webkit-linear-gradient(30deg, #7510F7 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #7510F7 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 400ms ease-in-out;
+  transition: background 400ms ease-in-out;
 }
 
 .button.is-primary:hover {
-  background-color: #A993BF;
-  border-color: transparent;
-  color: #FFFFFF;
+  background-position: 100%;
+  background-color: #fff;
+  color: #7510F7;
+  border: 2px solid #7510F7;
 }
  
 .occupation-box {
@@ -143,5 +151,9 @@ section .skills-box .content .columns .column:last-child {
       margin-top: -2rem;
   }
 }
+
+
+
+
 
 
