@@ -3,6 +3,7 @@
 /* General styles */
 body, button, input, select, textarea {
   font-family: Work Sans,Regular;
+  background-color: #fff;
 }
 
 .has-item-centered {

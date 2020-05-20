@@ -61,6 +61,15 @@ btnBirdfeed.addEventListener("click", function () {
 modalBirdfeed.addEventListener('modal:show', function() {})
 modalBirdfeed.addEventListener("modal:close", function() {})
 
+// Medium Clone modal
+const btnMediumClone = document.querySelector("#btnMediumClone")
+const modalMediumClone = new BulmaModal("#modalMediumClone")
+btnMediumClone.addEventListener("click", function () {
+	modalMediumClone.show()
+})
+modalMediumClone.addEventListener('modal:show', function() {})
+modalMediumClone.addEventListener("modal:close", function() {})
+
 // Drum Machine modal
 const btnDrumMachine = document.querySelector("#btnDrumMachine")
 const modalDrumMachine = new BulmaModal("#modalDrumMachine")
